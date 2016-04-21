@@ -1,0 +1,11 @@
+{
+  "name": "static-resources",
+  "description": "The best plugin ever.",
+  "version": "0.0.1",
+  "main": "index",
+  "dependencies": {
+    "ramda": "^0.19.1",
+    "response-negotiator": "../../lib/response-negotiator",
+    "webnodes-manager": "file:../../lib/webnodes-manager"
+  }
+}

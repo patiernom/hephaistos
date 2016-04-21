@@ -1,0 +1,10 @@
+{
+  "name"        : "poseidon",
+  "script"      : "index.js",
+  "args"        : ["-manifest", "default"],
+  "instances"   : 4,
+  "exec_mode"   : "cluster_mode",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}

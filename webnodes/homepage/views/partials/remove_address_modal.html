@@ -1,0 +1,14 @@
+<div class="modal fade remove-address-modal-{{address.addressId}}" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="remove-address-title">Cancellare l&apos;indirizzo?</div>
+                <div class="address-to-remove">{{address.street}}, {{address.civicNumber}} - {{address.locality}}</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Annulla</button>
+                <button type="button" class="btn btn-primary remove-confirm">Conferma</button>
+            </div>
+        </div>
+    </div>
+</div>

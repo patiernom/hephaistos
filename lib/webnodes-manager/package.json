@@ -1,0 +1,7 @@
+{
+  "name": "webnodes-manager",
+  "description": "Plugin for css and js artifacts utilies functions.",
+  "version": "0.0.1",
+  "main": "index",
+  "dependencies": {}
+}

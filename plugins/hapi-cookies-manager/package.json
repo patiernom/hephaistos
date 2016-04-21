@@ -1,0 +1,12 @@
+{
+  "name": "hapi-cookies-manager",
+  "description": "This plugin manage all cookies defined over the webnodes.",
+  "version": "0.0.4",
+  "main": "index",
+  "dependencies": {
+    "ecosystem": "file:../../lib/ecosystem",
+    "fp-error-handling": "0.0.4",
+    "mathjs": "^2.4.0",
+    "ramda": "^0.18.0"
+  }
+}

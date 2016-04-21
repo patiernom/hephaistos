@@ -1,0 +1,10 @@
+{
+  "name": "hapi-mongodb",
+  "description": "The best plugin ever.",
+  "version": "0.0.5",
+  "main": "index",
+  "dependencies": {
+    "mongodb": "^2.0.42",
+    "fp-error-handling": "0.0.4"
+  }
+}

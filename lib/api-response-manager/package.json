@@ -1,0 +1,9 @@
+{
+  "name": "api-response-manager",
+  "description": "Plugin for manage response from API calls.",
+  "version": "0.0.4",
+  "main": "index",
+  "dependencies": {
+    "boom": "2.8.0"
+  }
+}

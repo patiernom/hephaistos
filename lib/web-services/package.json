@@ -1,0 +1,9 @@
+{
+  "name": "web-services",
+  "description": "Plugin for manage all external services of your project.",
+  "version": "1.0.4",
+  "main": "index",
+  "dependencies": {
+  },
+  "serviceConfigFile": "server/config/services/default.json"
+}

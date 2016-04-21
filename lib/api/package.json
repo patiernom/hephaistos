@@ -1,0 +1,10 @@
+{
+  "name": "api",
+  "description": "Api",
+  "version": "1.5.0",
+  "main": "index",
+  "dependencies": {
+    "http-enrich": "file:../http-enrich",
+    "apici": "file:../apici"
+  }
+}

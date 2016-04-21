@@ -1,0 +1,7 @@
+{
+  "Locations": {
+    "Cities": "lib/api/locations/cities",
+    "Reverse": "lib/api/locations/reverse",
+    "Straight": "lib/api/locations/straight"
+  }
+}

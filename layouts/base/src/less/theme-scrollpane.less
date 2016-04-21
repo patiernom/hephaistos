@@ -1,0 +1,100 @@
+@import (reference) "variables.less";
+@import (reference) "theme-icon-fonts.less";
+
+.jspHorizontalBar
+{
+  background: transparent;
+}
+
+.jspVerticalBar {
+  background: transparent;
+}
+
+.jspTrack
+{
+  background: transparent;
+}
+
+.jspDrag
+{
+  background:  @gray-lighter;
+  color: @brand-success;
+
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.jspTrack .jspActive,
+.jspTrack .jspHover,
+.jspDrag:hover
+{
+  background: @orange-main;
+}
+
+.jspArrow
+{
+  .custom-icon();
+
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.jspVerticalBar>.jspActive,
+.jspArrow:hover
+{
+  color: @orange-main;
+}
+
+.jspVerticalBar
+{
+  width: 10px;
+}
+
+.jspHorizontalBar
+{
+  height: 10px;
+}
+
+.jspVerticalBar>.jspDisabled,
+.jspVerticalBar>.jspDisabled:hover,
+.jspHorizontalBar>.jspDisabled,
+.jspHorizontalBar>.jspDisabled:hover
+{
+  color: @orange-extra-light;
+}
+
+.jspVerticalBar .jspArrow
+{
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+  width: 10px;
+}
+
+.jspArrowUp
+{
+  .icon-arrow-right();
+  .icon-rotate(180);
+}
+
+.jspArrowDown
+{
+  .icon-arrow-right();
+  .icon-rotate(45);
+}
+
+.jspArrowLeft
+{
+  .icon-arrow-right();
+  .icon-rotate(90);
+}
+
+.jspArrowRight
+{
+  .icon-arrow-right();
+  .icon-arrow-right();
+}

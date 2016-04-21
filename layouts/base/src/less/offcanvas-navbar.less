@@ -1,0 +1,93 @@
+@import (reference) "offcanvas-menu";
+
+@media (max-width:@screen-sm-min) {
+  #header-navbar {
+    border-top: 0;
+
+    .container {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 100%;
+    }
+
+    .navbar-header {
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .offcanvas {
+      z-index: 6;
+
+      .head {
+        position: absolute;
+        height: 100%;
+
+        width: 100%;
+        padding: 10px 15px;
+      }
+
+      .navbar-nav {
+        min-width: 0;
+        width: 100%;
+        margin: 0;
+
+        ul.dropdown-menu {
+          list-style: outside none none;
+          padding-left: 0;
+
+          li a {
+            width: 100%;
+          }
+        }
+
+        li a {
+          display: block;
+          padding: 10px 15px;
+          position: relative;
+          color: @text-color;
+          font-size: 18px;
+          line-height: 22px;
+          font-weight: 300;
+          margin: 0;
+
+          i {
+            font-size: 25px;
+            vertical-align: middle;
+            margin-right: 20px;
+          }
+
+          span {
+            vertical-align: middle;
+          }
+
+          &.highlight {
+            color: @brand-primary;
+
+            &:hover {
+              color: @brand-primary;
+            }
+          }
+
+          &:hover {
+            color: @text-color;
+            text-decoration: none;
+          }
+        }
+
+        .dropdown-menu li a {
+          min-width: 0;
+          width: 70%;
+          white-space: normal;
+        }
+      }
+    }
+
+    .offcanvas-height-col {
+      z-index: 5;
+    }
+
+    .offcanvas-overlay {
+      z-index: 4;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "api":{
+    "domain": "www.domain.it",
+    "version": "1.4",
+    "protocol": "http",
+    "index": "lib/api/map.json"
+  }
+}

@@ -1,0 +1,59 @@
+{{> stepper step="1" search=this}}
+<div class="blush">
+    <div class="cloth">
+        <div class="container piatti">
+            <div class="row">
+                <div class="col-sm-16 col-xs-16 col-md-16">
+                    <h1 class="text-center">Ordina <span class="thin">Online dai</span> Migliori <span class="thin">Locali</span></h1>
+                    <div id="search-area">
+                        {{> search_form}}
+                    </div>
+                </div>
+            </div>
+
+            {{#if user.addresses.length}}
+            <div class="row">
+                <div class="col-sm-16 col-xs-16 col-md-16">
+                    <div id="user-addresses">
+                        <div class="user-addresses-title">Indirizzi recenti:</div>
+                        <ul>
+                            {{#each user.addresses}}
+                            <li class="user-address-container">
+                                <a class="user-address" data-street="{{this.street}}" data-civicnumber="{{this.civicNumber}}" data-city="{{this.locality}}" data-locid="{{this.locality}}" href="vendors/listing/{{this.longitude}}/{{this.latitude}}/{{this.cityId}}">
+                                {{this.street}}, {{this.civicNumber}} - {{this.locality}}
+                                </a>
+                                <button type="button" class="delete-address btn btn-link" data-toggle="modal" data-target=".remove-address-modal-{{this.addressId}}" data-action="account/address/remove/{{../user.userId}}/{{this.addressId}}">&times;</button>
+                                {{> remove_address_modal address=this}}
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+
+            <div class="row">
+                <div id="available-cities" class="col-sm-10 col-sm-offset-3 hidden-xs {{#if user.addresses.length}}hide{{/if}}">
+                    <ul class="list-inline text-center">
+                        {{#each cities}}
+                        {{#if this.mainCity}}
+                        <li>
+                            <a href="/{{lowercase_helper this.label}}">{{this.label}}</a>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-16 col-xs-16 col-md-16">
+                    <div id="search-result">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{> marketing}}
+{{> social}}

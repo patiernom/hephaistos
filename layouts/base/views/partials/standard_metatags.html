@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="format-detection" content="telephone=no">
+<meta content="website" property="og:type">
+<meta content="HelloFood.it" property="og:site_name">
+<meta content="http://www.hellofood.it/hellofood-og.jpg" property="og:image">
+<meta content="app-id=1015953825" name="custom-apple-itunes-app">
+<meta content="app-id=it.webs.hellofood.android" name="google-play-app">
+{{#if seo}}
+    <title>{{seo.title}}</title>
+    {{#each seo.metatags}}
+        {{#if this.name}}
+            <meta content="{{this.content}}" name="{{this.name}}">
+        {{else}}
+            {{#if this.property}}
+                <meta content="{{this.content}}" property="{{this.property}}">
+            {{/if}}
+        {{/if}}
+    {{/each}}
+{{else}}
+    {{> default_metatags}}
+{{/if}}

@@ -1,0 +1,10 @@
+{
+  "name": "ecosystem",
+  "description": "Plugin with system utilies functions.",
+  "version": "0.0.7",
+  "main": "index",
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "fp-error-handling": "0.0.4"
+  }
+}

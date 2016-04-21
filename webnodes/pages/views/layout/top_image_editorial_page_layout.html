@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{currentLanguage}}">
+{{> head}}
+<body>
+{{> header}}
+{{> stepper step="0"}}
+<div class="blush">
+    <div class="tovaglia">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-16 col-sm-16 col-lg-11 col-md-11">
+                    <div class="row">
+                        <div class="top-image-page col-xs-16 col-sm-16 col-lg-16 col-md-16">
+                            <img src="{{{pageDetail.image}}}" alt="{{{pageDetail.title}}}" class="img-responsive img-rounded">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-16 col-sm-16 col-lg-16 col-md-16">
+                            <div id="page" class="">
+                                <div class="row space-between-into">
+                                    <div class="col-xs-16 col-sm-16 col-lg-16 col-md-16">
+                                        {{> default_title}}
+
+                                        {{> abstract}}
+                                    </div>
+                                </div>
+                                {{{content}}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-16 col-sm-16 col-lg-5 col-md-5 hidden-xs hidden-sm">
+                    {{> banners}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{> footer}}
+</body>
+</html>

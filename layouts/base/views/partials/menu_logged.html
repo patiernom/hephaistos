@@ -1,0 +1,41 @@
+<li class="hidden-xs">
+    <a class="navbar-link" title="-" id="navbar-feedback"
+       data-toggle="popover" data-trigger="manual" data-placement="bottom" data-container="body">
+        <i class="icon-bell"></i><span id="user-notify-feedbacks"></span>
+    </a>
+</li>
+<li class="hidden-xs">
+    <a href="/puntipizza" class="navbar-link">
+        <span><span class="highlight" id="navbar-puntipizza">Punti Pizza</span>&nbsp;<i class="icon-pizza highlight"></i>&nbsp;<span class="user-points">0</span><span class="user-awaiting-points"></span></span>
+    </a>
+</li>
+<li class="hidden-xs">
+    <a href="/account/wallet" class="navbar-link">
+        <i class="glyphicon glyphicon-usd"></i>
+        <span><i class="icon-credit-card highlight"></i> <span class="cc-summary">0</span></span>
+    </a>
+</li>
+<li class="hidden-xs">
+    <a class="navbar-link highlight"><i class="icon-device-phone highlight"></i>{{user.username}}</a>
+</li>
+<li class="visible-xs"><a href="/orders"><i class="icon-navigation-menu-my-orders icon-2x highlight"></i><span>I Miei Ordini</span></a></li>
+<li class="visible-xs"><a href="/account/password/change"><i class="icon-navigation-menu-password icon-2x highlight"></i><span>Cambia password</span></a></li>
+<!--<li class="visible-xs"><a href="/promotions/code"><i class="icon-circle icon-2x highlight"></i><span>Codice Promo</span></a></li>-->
+<li class="visible-xs"><a href="/contacts/contatta/locale"><i class="icon-navigation-menu-contact icon-2x highlight"></i><span>Contatta Locale</span></a></li>
+<li class="visible-xs"><a href="/contacts/contattaci"><i class="icon-navigation-menu-contact icon-2x highlight"></i><span>Contattaci</span></a></li>
+<li class="visible-xs divider" role="separator"></li>
+<li class="visible-xs"><a href="/account/logout"><i class="icon-navigation-menu-logout icon-2x highlight"></i><span>Esci</span></a></li>
+<li id="myDropdown" class="dropdown hidden-xs">
+    <a href="#" class="dropdown-toggle navbar-link highlight" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div class="dropdown-icon"><span class="sr-only">Gestisci</span><i class="icon-bullets toggle-on-out"></i><i class="icon-close toggle-on-hover"></i></div></a>
+    <ul class="dropdown-menu">
+        <li><a href="/orders"><i class="icon-navigation-menu-my-orders icon-2x"></i><span>I Miei Ordini</span></a></li>
+        <li><a href="/account/wallet"><i class="icon-my-cards icon-2x"></i><span>Le mie Carte</span></a></li>
+        <li><a href="/promotions/code"><i class="icon-menu-promo icon-2x"></i><span>Codice Promo</span></a></li>
+        <li><a href="/account/password/change"><i class="icon-navigation-menu-password icon-2x"></i><span>Cambia Password</span></a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="/contacts/contatta/locale"><i class="icon-navigation-menu-contact icon-2x"></i><span>Contatta Locale</span></a></li>
+        <li><a href="/contacts/contattaci"><i class="icon-navigation-menu-contact icon-2x"></i><span>Contattaci</span></a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="/account/logout"><i class="icon-navigation-menu-logout icon-2x"></i><span>Esci</span></a></li>
+    </ul>
+</li>

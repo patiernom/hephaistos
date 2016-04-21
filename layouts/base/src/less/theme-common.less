@@ -1,0 +1,217 @@
+@import (reference) "variables.less";
+@import (reference) "theme-icon-fonts.less";
+@import (reference) "theme-utilities.less";
+
+/* Common declaration */
+body {
+  padding-top: 66px;
+  min-width: 320px;
+}
+
+a {
+  outline: 0;
+
+  &:hover, &:visited, &:link {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+span.ui-helper-hidden-accessible {
+  display: none !important;
+}
+
+.no-sides-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.generic-page-main {
+  padding-bottom: 0;
+}
+
+.row {
+  &.space-between-into {
+    padding-bottom: 20px;
+  }
+
+  &.space-between-out {
+    margin-bottom: 30px;
+  }
+}
+
+.horizontal-box-margin {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-trasparent {
+  background: transparent !important;
+
+  &.btn-success {
+    color: @brand-success;
+  }
+
+  &.btn-primary {
+    color: @brand-primary;
+  }
+
+  &.btn-danger {
+    color: @brand-danger;
+  }
+}
+
+
+.highlight {
+  color: @brand-primary;
+}
+
+[type="radio"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  display: inline-block;
+}
+
+[type="radio"] + span {
+  display: block;
+  width: 100%;
+
+  > span {
+    display: inline-block;
+    vertical-align: middle;
+    .calc(~"100% - 29px");
+    line-height: 18px;
+  }
+}
+
+/* the basic, unchecked style */
+[type="radio"] + span:before {
+  .custom-icon();
+  content: "\f10c"; /* Radio Button Unchecked */
+  display: inline-block;
+  width: 25px;
+  font-size: 1.3em;
+  transition: 0.5s ease all;
+  color: @gray;
+  vertical-align: middle;
+  line-height: 1.3em;
+}
+
+/* the checked style using the :checked pseudo class */
+[type="radio"]:checked + span:before {
+  content: "\f192"; /* Radio Button Checked */
+  font-size: 1.3em;
+  color: @brand-success;
+}
+
+[type="checkbox"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  display: inline-block;
+}
+
+[type="checkbox"] + span {
+  display: block;
+  width: 100%;
+
+  > span {
+    display: inline-block;
+    vertical-align: middle;
+    .calc(~"100% - 24px");
+    line-height: 18px;
+  }
+}
+
+/* the basic, unchecked style */
+[type="checkbox"] + span:before {
+  .custom-icon();
+  content: "\f10c"; /* Checkbox Button Unchecked */
+  display: inline-block;
+  width: 20px;
+  font-size: 1.3em;
+  transition: 0.5s ease all;
+  color: @gray;
+  vertical-align: middle;
+  line-height: 1.3em;
+}
+
+/* the checked style using the :checked pseudo class */
+[type="checkbox"]:checked + span:before {
+  content: "\f192"; /* Checkbox Button Checked */
+  font-size: 1.3em;
+  color: @brand-success;
+}
+
+.focus-input {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid @input-border;
+}
+
+.focus-input:focus {
+  box-shadow: 0 0 5px @brand-primary;
+  border: 1px solid @brand-primary;
+}
+
+.hiddenButActive {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  outline: 0;
+  border: none;
+}
+
+input, select, textarea {
+
+  &:focus {
+    outline: none !important;
+    border: 1px solid @brand-primary !important;
+  }
+}
+
+.form-group {
+  &.has-error {
+    input, select, textarea {
+      background-color: @orange-light;
+      .colored-placeholder(@orange-main, 18px, italic);
+    }
+  }
+}
+
+button{
+  outline:none !important;
+}
+
+.scrollToTop{
+  text-align:center;
+  background: transparent;
+  color: @orange-main;
+  text-decoration: none;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  display: none;
+  outline: none;
+  .icon-rotate(270);
+
+  &:hover, &:visited, &:link {
+    text-decoration: none;
+    color: @orange-main;
+    outline: none;
+  }
+}

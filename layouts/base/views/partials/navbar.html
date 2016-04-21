@@ -1,0 +1,39 @@
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="offcanvas right clearfix{{#if this.user}} navbar-logged{{else}} navbar-anonymous{{/if}}">
+    {{#if this.user}}
+        <div class="head visible-xs text-center">
+            <a href="javascript:$.noop();" class="offcanvans-close pull-right"><i class="icon-close icon-2x"></i></a>
+            <div class="profile">
+                <a class="user text-center" href="#">
+                    <i class="icon-circle">
+                        <i class="icon-user"></i>
+                    </i>
+                    <span class="highlight">{{user.username}}</span>
+                </a>
+            </div>
+            {{> menu_logged_profile}}
+
+            <hr>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            {{> menu_logged}}
+        </ul>
+    {{else}}
+        <div class="head visible-xs text-center">
+            <a href="javascript:$.noop();" class="offcanvans-close pull-right"><i class="icon-close icon-2x"></i></a>
+            <div class="profile">
+                <a class="user text-center" href="#">
+                    <i class="icon-circle">
+                        <i class="icon-user"></i>
+                    </i>
+                    <button class="btn btn-success inverted btn-lg" id="trigger-ajax-login" href="/account/login">Accedi</button>
+                </a>
+            </div>
+
+            <hr>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            {{> menu_anonymous}}
+        </ul>
+    {{/if}}
+</div><!-- /.navbar-collapse -->

@@ -1,0 +1,41 @@
+@import (reference) "variables";
+@import (reference) "theme-utilities";
+
+.bootstrap-validate-form {
+  .popover {
+    margin: 10px;
+  }
+
+  .has-error .form-control.inline-error, .has-error input.inline-error {
+    box-shadow: none;
+    border: none;
+    .colored-placeholder(@brand-primary, 15px, italic);
+  }
+}
+
+.search-validate-form {
+  .alert {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .form-control {
+    .colored-placeholder(@gray, 20px, italic);
+    .bp(desktop; {
+      .colored-placeholder(@gray, 24px, italic);
+    });
+  }
+
+  .has-error {
+    background-color: @orange-extra-light;
+    .form-control {
+      background-color: @orange-extra-light;
+      border-color: @gray;
+      color: @brand-primary;
+      .colored-placeholder(@brand-primary, 20px, italic);
+      .bp(desktop; {
+        .colored-placeholder(@brand-primary, 24px, italic);
+      });
+    }
+  }
+}

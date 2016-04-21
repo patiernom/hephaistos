@@ -1,0 +1,8 @@
+{
+  "name": "http-enrich",
+  "description": "Poseidon specific enrichment functions for http protocol",
+  "version": "0.0.1",
+  "main": "index",
+  "dependencies": {
+  }
+}

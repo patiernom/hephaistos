@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "description": "",
+  "dependencies": {
+    "ecosystem": "file:../lib/ecosystem",
+    "fp-error-handling": "0.0.4",
+    "hapi-auth-cookie": "^3.1.0",
+    "hapi-cookies-manager": "file:../plugins/hapi-cookies-manager",
+    "hapi-locale": "^1.0.2",
+    "hapi-safe-stop": "file:../plugins/hapi-safe-stop",
+    "inert": "^3.0.1",
+    "poseidon-core": "^0.1.5",
+    "server-postgres": "file:../plugins/hapi-postgres",
+    "template-views-loader": "file:../plugins/template-views-loader",
+    "vision": "^3.0.0"
+  },
+  "main": "server.js"
+}

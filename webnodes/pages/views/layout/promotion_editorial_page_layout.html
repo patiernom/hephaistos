@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="{{currentLanguage}}">
+{{> head}}
+<body>
+{{> header}}
+{{> stepper step="0"}}
+<div class="blush">
+    <div class="tovaglia">
+        <div class="container">
+            <div class="row">
+                <div class="promotion-page-main col-xs-16 col-sm-12 col-md-11 col-lg-11">
+                    <div id="page" class="well well-md">
+                        <div class="row">
+                            <div class="col-xs-16 col-sm-16 col-lg-16 col-md-16">
+                                {{> styled_title}}
+                            </div>
+                        </div>
+                        {{{content}}}
+                        <hr />
+                        <div class="faq-container">
+                            <div class="faq">
+                                <div class="button-collapse-container clearfix">
+                                    <button class="button-collapse col-xs-16" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                                        <span class="text">Devo prendere 10 pizze tutte insieme?</span><i class="icon-right-arrow"></i>
+                                    </button>
+                                </div>
+                                <div class="faq-response clearfix collapse" id="faq1">
+                                    <p>
+                                        Assolutamente NO! Puoi ordinare in diversi giorni e da locali diversi.<br/>
+                                        I punti rimarranno memorizzati, associati al tuo numero di telefono.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="button-collapse-container clearfix">
+                                    <button class="button-collapse col-xs-16" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                        <span class="text">Quanti ordini devo fare per ottenere lo sconto?</span><i class="icon-right-arrow"></i>
+                                    </button>
+                                </div>
+                                <div class="faq-response clearfix collapse" id="faq2">
+                                    <p>Anche uno solo: la promozione non &egrave; legata al numero di ordini, conta solo il numero di prodotti ordinati.. Prova ad aggiungere abbastanza prodotti al carrello!</p>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="button-collapse-container clearfix">
+                                    <button class="button-collapse col-xs-16" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                        <span class="text">Se ho 10 punti, devo per forza usufruire dello sconto?</span><i class="icon-right-arrow"></i>
+                                    </button>
+                                </div>
+                                <div class="faq-response clearfix collapse" id="faq3">
+                                    <p>NO. Lo sconto compare automaticamente, ma pu&ograve; essere rimosso come ogni altro articolo del carrello: basta selezionare &quot;0&quot; unit&agrave; e conserverai i tuoi punti.</p>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="button-collapse-container clearfix">
+                                    <button class="button-collapse col-xs-16" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                        <span class="text">Quando scade la promozione?</span><i class="icon-right-arrow"></i>
+                                    </button>
+                                </div>
+                                <div class="faq-response clearfix collapse" id="faq4">
+                                    <p>La promozione NON HA SCADENZA. Tuttavia, ci riserviamo la possibilit&agrave; di effettuare modifiche al regolamento.</p>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="button-collapse-container clearfix">
+                                    <button class="button-collapse col-xs-16" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                        <span class="text">Cosa sono i punti in attesa di conferma?</span><i class="icon-right-arrow"></i>
+                                    </button>
+                                </div>
+                                <div class="faq-response clearfix collapse" id="faq5">
+                                    <p>Si tratta di una precauzione volta ad evitare abusi. I punti guadagnati in un ordine non possono essere utilizzati in ordini successivi prima che siano trascorsi 180 minuti.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-16 col-sm-4 col-md-5 col-lg-5">
+                    {{> banners}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{> footer}}
+</body>
+</html>

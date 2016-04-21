@@ -1,0 +1,12 @@
+{
+  "name": "apici",
+  "description": "API Client Interface - is a library for abstract api rest layer.",
+  "version": "0.0.7",
+  "main": "index",
+  "dependencies": {
+    "ramda": "^0.19.1",
+    "unirest": "^0.4.2",
+    "web-services": "file:../web-services",
+    "fp-error-handling": "0.0.4"
+  }
+}

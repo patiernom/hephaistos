@@ -1,0 +1,150 @@
+{
+  "js": {
+    "appBase": {
+      "libname": "common.lib",
+      "dest": "dist/js",
+      "jshintrc": "src/js/.jshintrc",
+      "jscsrc": ".jscsrc",
+      "maps":  "/maps",
+      "srcfiles": [
+        { "root": "src/js/", "directory": "vendors/", "filename": "jquery-2.1.4.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/", "filename": "jquery-ui-1.11.4.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/", "filename": "velocity.min.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/", "filename": "modernizr-custom.min.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/", "filename": "ramda.min.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/", "filename": "cookies.min.js", "external": true }
+      ]
+    },
+    "appFramework": {
+      "libname": "custom.bootstrap",
+      "dest": "dist/js",
+      "jshintrc": "src/js/vendors/bootstrap-3.3.5/.jshintrc",
+      "jscsrc": "src/js/vendors/bootstrap-3.3.5/.jscsrc",
+      "maps":  "/maps",
+      "srcfiles": [
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "affix.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "alert.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "button.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "carousel.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "collapse.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "dropdown.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "modal.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "tooltip.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "popover.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "scrollspy.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "tab.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/bootstrap-3.3.5/", "filename": "transition.js", "external": true }
+      ]
+    },
+    "appScope": {
+      "libname": "app",
+      "dest": "dist/js",
+      "jshintrc": "src/js/.jshintrc",
+      "jscsrc": ".jscsrc",
+      "maps":  "/maps",
+      "srcfiles": [
+        { "root": "src/js/", "directory": "", "filename": "dynamically-modals.js", "external": false },
+        { "root": "src/js/", "directory": "", "filename": "bootstrap-validation.js", "external": false },
+        { "root": "src/js/", "directory": "", "filename": "bootstrap-select.js", "external": false },
+        { "root": "src/js/", "directory": "", "filename": "offcanvas-menu.js", "external": false },
+        { "root": "src/js/", "directory": "vendors/", "filename": "jquery.mousewheel.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/", "filename": "mwheelIntent.js", "external": true },
+        { "root": "src/js/", "directory": "vendors/", "filename": "jquery.jscrollpane.min.js", "external": true },
+        { "root": "src/js/", "directory": "", "filename": "main.js", "external": false }
+      ]
+    }
+  },
+  "css": {
+    "appStyle": {
+      "libname": "app",
+      "dest": "dist/css",
+      "csslintrc": "src/css/csslintrc.json",
+      "maps":  "/maps",
+      "srcfiles": [
+        {
+          "root": "src/css/", "directory": "", "filename": "custom.bootstrap.css"
+        },
+        {
+          "root": "src/css/", "directory": "vendors/", "filename": "jquery.jscrollpane.css"
+        },
+        {
+          "root": "src/css/", "directory": "", "filename": "custom.theme.css"
+        }
+      ]
+    }
+  },
+  "less": {
+    "baseFramework": {
+      "libname": "custom.bootstrap",
+      "source": "src/less",
+      "dest": "src/css",
+      "maps":  "/maps",
+      "srcfiles": [
+        "src/less/variables.less",
+        "src/less/vendors/bootstrap-3.3.5/mixins.less",
+        "src/less/vendors/bootstrap-3.3.5/normalize.less",
+        "src/less/vendors/bootstrap-3.3.5/print.less",
+        "src/less/vendors/bootstrap-3.3.5/scaffolding.less",
+        "src/less/vendors/bootstrap-3.3.5/type.less",
+        "src/less/vendors/bootstrap-3.3.5/code.less",
+        "src/less/vendors/bootstrap-3.3.5/grid.less",
+        "src/less/vendors/bootstrap-3.3.5/tables.less",
+        "src/less/vendors/bootstrap-3.3.5/forms.less",
+        "src/less/vendors/bootstrap-3.3.5/buttons.less",
+        "src/less/vendors/bootstrap-3.3.5/component-animations.less",
+        "src/less/vendors/bootstrap-3.3.5/dropdowns.less",
+        "src/less/vendors/bootstrap-3.3.5/button-groups.less",
+        "src/less/vendors/bootstrap-3.3.5/input-groups.less",
+        "src/less/vendors/bootstrap-3.3.5/navs.less",
+        "src/less/vendors/bootstrap-3.3.5/navbar.less",
+        "src/less/vendors/bootstrap-3.3.5/breadcrumbs.less",
+        "src/less/vendors/bootstrap-3.3.5/pagination.less",
+        "src/less/vendors/bootstrap-3.3.5/pager.less",
+        "src/less/vendors/bootstrap-3.3.5/labels.less",
+        "src/less/vendors/bootstrap-3.3.5/badges.less",
+        "src/less/vendors/bootstrap-3.3.5/jumbotron.less",
+        "src/less/vendors/bootstrap-3.3.5/thumbnails.less",
+        "src/less/vendors/bootstrap-3.3.5/alerts.less",
+        "src/less/vendors/bootstrap-3.3.5/progress-bars.less",
+        "src/less/vendors/bootstrap-3.3.5/media.less",
+        "src/less/vendors/bootstrap-3.3.5/list-group.less",
+        "src/less/vendors/bootstrap-3.3.5/panels.less",
+        "src/less/vendors/bootstrap-3.3.5/responsive-embed.less",
+        "src/less/vendors/bootstrap-3.3.5/wells.less",
+        "src/less/vendors/bootstrap-3.3.5/close.less",
+        "src/less/vendors/bootstrap-3.3.5/modals.less",
+        "src/less/vendors/bootstrap-3.3.5/tooltip.less",
+        "src/less/vendors/bootstrap-3.3.5/popovers.less",
+        "src/less/vendors/bootstrap-3.3.5/carousel.less",
+        "src/less/vendors/bootstrap-3.3.5/utilities.less",
+        "src/less/vendors/bootstrap-3.3.5/responsive-utilities.less"
+      ]
+    },
+    "baseTheme": {
+      "libname": "custom.theme",
+      "source": "src/less",
+      "dest": "src/css",
+      "maps": "/maps",
+      "srcfiles": [
+        "src/less/icon-fonts.less",
+        "src/less/theme-utilities.less",
+        "src/less/theme-dropdowns.less",
+        "src/less/theme-font.less",
+        "src/less/theme-common.less",
+        "src/less/theme-scrollpane.less",
+        "src/less/offcanvas-menu.less",
+        "src/less/bootstrap-validation.less",
+        "src/less/app.less"
+      ]
+    }
+  },
+    "lessVars": {
+      "name": "variables.less",
+      "dest": "src/less/",
+      "srcfiles":[
+        "config/bootstrap.variables.json",
+        "config/custom.variables.json",
+        "config/custom.icon.json"
+      ]
+    }
+  }

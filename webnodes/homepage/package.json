@@ -1,0 +1,18 @@
+{
+  "name": "homepage",
+  "description": "The best plugin ever.",
+  "version": "0.0.3",
+  "main": "index",
+  "dependencies": {
+    "api": "file:../../lib/api",
+    "api-response-manager": "file:../../lib/api-response-manager",
+    "async": "^1.4.2",
+    "boom": "2.8.0",
+    "fp-error-handling": "0.0.4",
+    "geodecoding": "file:../../lib/geodecoding",
+    "joi": "^6.6.0",
+    "ramda": "^0.18.0",
+    "token-device": "file:../../lib/token-device",
+    "webnodes-manager": "file:../../lib/webnodes-manager"
+  }
+}

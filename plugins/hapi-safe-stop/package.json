@@ -1,0 +1,8 @@
+{
+  "name": "hapi-safe-stop",
+  "description": "The best plugin ever.",
+  "version": "0.0.1",
+  "main": "index",
+  "dependencies": {
+  }
+}

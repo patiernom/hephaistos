@@ -1,0 +1,9 @@
+{
+  "name": "response-negotiator",
+  "description": "Plugin for manage response HTTP content negotiation.",
+  "version": "0.0.1",
+  "main": "index",
+  "dependencies": {
+    "fp-error-handling": "0.0.4"
+  }
+}

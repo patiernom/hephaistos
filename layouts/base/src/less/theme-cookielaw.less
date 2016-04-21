@@ -1,0 +1,32 @@
+@import (reference) "variables.less";
+@import (reference) "theme-icon-fonts.less";
+
+.cc_banner {
+  &.cc_container {
+
+    .cc_btn {
+      &.cc_btn_accept_all {
+        .btn();
+        .btn-success();
+      }
+    }
+
+    .cc_message {
+      font-family: 'Karma';
+      font-size: 17px;
+      color: @text-color;
+      line-height: 20px;
+      font-weight: 300;
+
+      a, a:hover, .cc_more_info {
+        color: @brand-primary;
+        text-decoration: underline;
+        font-weight: 400;
+      }
+    }
+
+    .cc_logo {
+      visibility: hidden;
+    }
+  }
+}
