@@ -13,7 +13,7 @@ exports.register = function (server, options, next) {
             path: options.baseRoute + page.url,
             config: require('./default')(server, page.id)
         });
-    })
+    });
 
     next();
 };

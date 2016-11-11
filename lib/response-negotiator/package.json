@@ -4,6 +4,6 @@
   "version": "0.0.1",
   "main": "index",
   "dependencies": {
-    "fp-error-handling": "0.0.4"
+    "fp-error-handling": "0.0.7"
   }
 }

@@ -5,6 +5,6 @@
   "main": "index",
   "dependencies": {
     "accounting": "^0.4.1",
-    "fp-error-handling": "0.0.4"
+    "fp-error-handling": "0.0.7"
   }
 }

@@ -1,14 +1,11 @@
 'use strict';
 
-var ApiciApi = require('api'),
-    fpError = require('fp-error-handling'),
-    tokenManager = require('token-device'),
-    R = require('ramda'),
+var R = require('ramda'),
     webnodesManager = require('webnodes-manager'),
-    createSession = function (token) {
+    createSession = function () {
         return {
             navigation: {
-                token: token
+                visit: 1
             }
         };
     },
@@ -34,8 +31,7 @@ var ApiciApi = require('api'),
     };
 
 module.exports = function (server, page) {
-    let Api = ApiciApi(server),
-        responseView = (rpl, request, pageId) => {
+    let responseView = (rpl, request, pageId) => {
             return function (token) {
                 var visit = createSession(token),
                     data = createSession(token),
@@ -71,18 +67,7 @@ module.exports = function (server, page) {
             failAction: 'error' // may also be 'ignore' or 'log'
         },
         handler: function (request, reply) {
-            let onError = (err) => {
-                let error = Boom.create(err.status, err.message)
-                reply(error);
-            }
-
-            let currentToken = (callback) => {
-                var currentSession = tokenManager(request, ['visit']);
-
-                currentSession.getToken(fpError(onError, callback));
-            }
-
-            currentToken(responseView(reply, request, page));
+            responseView(reply, request, page);
         }
     };
 };

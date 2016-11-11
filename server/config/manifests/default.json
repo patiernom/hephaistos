@@ -1,7 +1,7 @@
 {
   "server": {
     "app": {
-      "slogan": "Poseidon",
+      "slogan": "Hephaistos",
       "options": {
         "services": "server/config/services/default.json",
         "apiIndex": "lib/api"
@@ -12,7 +12,7 @@
     {
       "host": "127.0.0.1",
       "port": 8000,
-      "labels": ["hellofood-exp-r1"]
+      "labels": ["hephaistos-exp-r1"]
     }
   ],
   "plugins": {
@@ -34,16 +34,16 @@
         "path": "webnodes"
       },
       "views": {
-        "commonPath": "layouts/hellofood-exp-r1/views",
-        "commonLayout": "layouts/hellofood-exp-r1/views/layout",
-        "commonPartials": "layouts/hellofood-exp-r1/views/partials",
-        "commonHelpers": "layouts/hellofood-exp-r1/views/helpers"
+        "commonPath": "layouts/base/views",
+        "commonLayout": "layouts/base/views/layout",
+        "commonPartials": "layouts/base/views/partials",
+        "commonHelpers": "layouts/base/views/helpers"
       },
       "artifacts": {
-        "config": "layouts/hellofood-exp-r1/config",
+        "config": "layouts/base/config",
         "common": {
-          "javascript": ["js/hellofood.common.lib.min.js", "js/hellofood.bootstrap.min.js", "js/hellofood.app.min.js"],
-          "stylesheets": ["css/hellofood.app.min.css"]
+          "javascript": ["js/custom.common.lib.min.js", "js/custom.bootstrap.min.js", "js/app.min.js"],
+          "stylesheets": ["css/custom.app.min.css"]
         }
       },
       "debug": false
@@ -55,7 +55,7 @@
       "debug": false
     },
     "./static-resources": {
-      "prefix": "layouts/hellofood-exp-r1/src"
+      "prefix": "layouts/base/src"
     },
     "./pages": {
       "baseRoute": "/"
@@ -63,44 +63,8 @@
     "./homepage": {
       "baseRoute": "/"
     },
-    "./contacts": {
-      "baseRoute": "/contacts"
-    },
-    "./cities": {
-      "baseRoute": "/cities"
-    },
-    "./geocode": {
-      "baseRoute": "/geocode"
-    },
-    "./search": {
-      "baseRoute": "/search"
-    },
-    "./vendors": {
-      "baseRoute": "/vendors"
-    },
-    "./checkout": {
-      "baseRoute": "/checkout"
-    },
-    "./account": {
-      "baseRoute": "/account"
-    },
-    "./orders": {
-      "baseRoute": "/orders"
-    },
-    "./promo": {
-      "baseRoute": "/promotions"
-    },
-    "./wallet": {
-      "baseRoute": "/account/wallet"
-    },
-    "./notifications": {
-      "baseRoute": "/notifications"
-    },
-    "./feedback": {
-      "baseRoute": "/feedback"
-    },
-    "./newsletter": {
-      "baseRoute": "/newsletter"
+    "./musixquiz": {
+      "baseRoute": "/musixmatch/quiz"
     }
   }
 }

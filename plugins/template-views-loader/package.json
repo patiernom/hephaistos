@@ -4,7 +4,7 @@
   "version": "0.0.3",
   "main": "index",
   "dependencies": {
-    "fp-error-handling": "0.0.4",
+    "fp-error-handling": "0.0.7",
     "ecosystem": "file:../../lib/ecosystem",
     "handlebars": "^3.0.3"
   }

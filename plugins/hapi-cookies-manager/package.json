@@ -5,7 +5,7 @@
   "main": "index",
   "dependencies": {
     "ecosystem": "file:../../lib/ecosystem",
-    "fp-error-handling": "0.0.4",
+    "fp-error-handling": "0.0.7",
     "mathjs": "^2.4.0",
     "ramda": "^0.18.0"
   }

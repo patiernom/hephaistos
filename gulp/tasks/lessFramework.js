@@ -7,15 +7,24 @@ module.exports = function (gulp, plugins, helpers) {
     var libraries = helpers.getLibrary("config").less,
         gulpSequence = plugins.sequence.use(gulp),
         sequence = [],
+        getSourceFile = function(source){
+            var output = [];
+
+            source.forEach(function(item){
+                output.push(helpers.projectSetting.projectDirectory + '/' + item);
+            });
+
+            return output;
+        },
         lessGenertion = function(library, done){
             console.log('Start to generate less Framework ' + library.libname + ' -  destination folder: ' + library.dest + ' - map folder: ' + library.maps);
-            gulp.src(library.srcfiles)
+            gulp.src(getSourceFile(library.srcfiles))
                 .pipe(plugins.lessImport( library.libname + '.less'))
-                .pipe(gulp.dest(path.resolve(library.source)))
+                .pipe(gulp.dest(path.resolve(helpers.projectSetting.projectDirectory + '/' + library.source)))
                 .pipe(plugins.sourcemaps.init())
                 .pipe(plugins.less())
                 .pipe(plugins.sourcemaps.write(library.maps))
-                .pipe(gulp.dest(path.resolve(library.dest)))
+                .pipe(gulp.dest(path.resolve(helpers.projectSetting.projectDirectory + '/' + library.dest)))
                 .on('end', done);
         };
 

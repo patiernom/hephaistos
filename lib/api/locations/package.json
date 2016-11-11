@@ -1,7 +1,0 @@
-{
-  "name": "api-locations",
-  "description": "Api call.",
-  "version": "1.0.0",
-  "main": "index",
-  "dependencies": {}
-}

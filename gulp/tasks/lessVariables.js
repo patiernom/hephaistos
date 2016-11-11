@@ -9,7 +9,7 @@ module.exports = function (gulp, plugins, helpers) {
             var sources = {};
 
             config.srcfiles.forEach(function(item){
-                sources = R.merge(sources, require(path.resolve(item)));
+                sources = R.merge(sources, require(path.resolve(helpers.projectSetting.projectDirectory + '/' + item)));
             });
 
             return sources;
@@ -18,7 +18,7 @@ module.exports = function (gulp, plugins, helpers) {
     return function(done){
         plugins.file(config.name, '', { src: true })
             .pipe(plugins.lessJsonVariables(getJSONSource()))
-            .pipe(gulp.dest(config.dest, { cwd: process.cwd()}))
+            .pipe(gulp.dest(path.resolve(helpers.projectSetting.projectDirectory + '/' + config.dest)))
             .on('end', done);
     };
 };

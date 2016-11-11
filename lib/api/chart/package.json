@@ -1,0 +1,7 @@
+{
+  "name": "api-chart",
+  "description": "Api call.",
+  "version": "1.0.0",
+  "main": "index",
+  "dependencies": {}
+}

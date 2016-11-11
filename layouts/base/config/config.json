@@ -1,7 +1,7 @@
 {
   "js": {
     "appBase": {
-      "libname": "common.lib",
+      "libname": "custom.common.lib",
       "dest": "dist/js",
       "jshintrc": "src/js/.jshintrc",
       "jscsrc": ".jscsrc",
@@ -56,7 +56,7 @@
   },
   "css": {
     "appStyle": {
-      "libname": "app",
+      "libname": "custom.app",
       "dest": "dist/css",
       "csslintrc": "src/css/csslintrc.json",
       "maps":  "/maps",

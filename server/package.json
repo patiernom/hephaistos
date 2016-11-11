@@ -4,14 +4,13 @@
   "description": "",
   "dependencies": {
     "ecosystem": "file:../lib/ecosystem",
-    "fp-error-handling": "0.0.4",
+    "fp-error-handling": "0.0.7",
     "hapi-auth-cookie": "^3.1.0",
     "hapi-cookies-manager": "file:../plugins/hapi-cookies-manager",
     "hapi-locale": "^1.0.2",
     "hapi-safe-stop": "file:../plugins/hapi-safe-stop",
     "inert": "^3.0.1",
-    "poseidon-core": "^0.1.5",
-    "server-postgres": "file:../plugins/hapi-postgres",
+    "hephaistos-core": "^0.1.1",
     "template-views-loader": "file:../plugins/template-views-loader",
     "vision": "^3.0.0"
   },

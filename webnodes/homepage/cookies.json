@@ -1,0 +1,31 @@
+{
+  "authorizations": [
+    {
+      "name": "session",
+      "strategy": "cookie",
+      "options": {
+        "password": "mypassw0rd",
+        "cookie": "auth_visit",
+        "redirectTo": "/account/login",
+        "appendNext": true,
+        "isSecure": false,
+        "redirectOnTry": false,
+        "ttl": "24 * 60 * 60 * 1000"
+      }
+    }
+  ],
+  "cookies": [
+    {
+      "name": "visit",
+      "options": {
+        "ttl": null,
+        "isSecure": false,
+        "isHttpOnly": true,
+        "encoding": "base64json",
+        "path": "/",
+        "clearInvalid": false,
+        "strictHeader": true
+      }
+    }
+  ]
+}

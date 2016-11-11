@@ -13,7 +13,7 @@ module.exports = function (gulp, plugins, helpers) {
             var output = [];
 
             source.forEach(function(item){
-                output.push(item.root + item.directory + item.filename);
+                output.push(helpers.projectSetting.projectDirectory + '/' + item.root + item.directory + item.filename);
             });
 
             return output;

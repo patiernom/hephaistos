@@ -11,7 +11,7 @@ module.exports = function (gulp, plugins, helpers) {
             var output = [];
 
             source.forEach(function (item) {
-                output.push(item.root + item.directory + item.filename);
+                output.push(helpers.projectSetting.projectDirectory + '/' + item.root + item.directory + item.filename);
             });
 
             return output;
@@ -20,11 +20,11 @@ module.exports = function (gulp, plugins, helpers) {
             console.log('Start to generate css Framework ' + library.libname + ' -  destination folder: ' + library.dest + ' - map folder: ' + library.maps);
 
             gulp.src(getSourceFile(library.srcfiles))
-                .pipe(plugins.csslint(path.resolve(library.csslintrc)))
+                .pipe(plugins.csslint(path.resolve(helpers.projectSetting.projectDirectory + '/' + library.csslintrc)))
                 .pipe(plugins.csslint.reporter())
                 .pipe(plugins.concat('all.css'))
                 .pipe(plugins.sourcemaps.init())
-                .pipe(plugins.minifyCss())
+                .pipe(plugins.cleanCss())
                 .pipe(plugins.rename({basename: library.libname, suffix: '.min'}))
                 .pipe(plugins.sourcemaps.write(library.maps))
                 .pipe(gulp.dest(path.resolve(library.dest)))

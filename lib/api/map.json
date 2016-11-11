@@ -1,7 +1,9 @@
 {
-  "Locations": {
-    "Cities": "lib/api/locations/cities",
-    "Reverse": "lib/api/locations/reverse",
-    "Straight": "lib/api/locations/straight"
+  "Chart": {
+    "ArtistsGet": "lib/api/chart/artists.get",
+    "TracksGet": "lib/api/chart/tracks.get"
+  },
+  "Track": {
+    "LyricsGet": "lib/api/track/lyrics.get"
   }
 }

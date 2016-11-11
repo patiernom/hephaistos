@@ -9,10 +9,10 @@
 
 var gulp     = require('gulp'),
     plugins  = require('gulp-load-plugins')(),
-    helpers = require('grulper-load-projects')('./startup/config.json'),
+    helpers = require('grulper-load-projects')('./gulp/startup.json'),
     tasks    = require('grulper-load-tasks'),
     options = {
-        dirname: helpers.projectSetting.projectDirectory + helpers.projectSetting.projectTasks
+        dirname: helpers.projectSetting.projectTasks
     };
 
 gulp = tasks(gulp, options, plugins, helpers);
